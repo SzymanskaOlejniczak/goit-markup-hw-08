@@ -15,31 +15,17 @@
         <header class="header">
             <div class="container container-header">
             <a class="logo" href="WebStudio"><h3 class="logo__text"><span class="logo__text--blue">Web</span><span class="logo__text--black">Studio</span></h3></a>
-            <nav>
-                <button class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+            <div class="hamburger js-menu-container is-open"
+            <button class="hamburger__close-btn js-close-menu">
+                <svg class="hamburger__x"><use href="./images/icons.svg#close-black"></use></svg></button>
+                <div class="hamburger-list-container">
+                <nav>
             <ul class="navigation">
                 <li class="navigation__item navigation__item--active"><a href="index.html" class="logo__text--black link">Agencja</a></li>
                 <li class="navigation__item"><a href="portfolio.html" class="logo__text--black link">Portfolio</a></li>
                 <li class="navigation__item"><a href="" class="logo__text--black link">Kontakt</a></li>
-            </ul>
-            </nav> 
+            </ul> 
+            </nav>
             <ul class="contact-info">
                 <li class="contact-info__text">
                     <a class="contact-info__text--gray" href="mailto:info@devstudio.com">
@@ -450,6 +436,7 @@ non sodales dui. Interdum et malesuada</p>
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
         <script defer src="js/mobile-menu.js"></script>
     </body>
 </html>
