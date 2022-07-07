@@ -26,16 +26,6 @@
         top: 29px;
         margin-top: -4px;
     }
-    &--active2 {
-        fill:#757575;
-        color: #757575;
-        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover {
-            cursor: pointer;
-            fill: #2196f3;
-            color: #2196f3;
-        }
-    }
 }
 
 
