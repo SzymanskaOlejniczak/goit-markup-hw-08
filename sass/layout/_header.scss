@@ -1,3 +1,26 @@
 .header {
     border-bottom: 1px solid #ECECEC;
 }
+.contact-info {
+    display: flex;
+    list-style: none;
+    align-items:center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    &__text {
+        margin-left: 23px;
+        align-items: center;
+        justify-content: space-between;
+        &--gray {
+            fill:#757575;
+            color: #757575;
+            transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                &:hover {
+                cursor: pointer;
+                fill: #2196f3;
+                color: #2196f3;
+            }
+        }
+    
+    }
+}
