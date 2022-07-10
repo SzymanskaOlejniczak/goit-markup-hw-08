@@ -21,13 +21,10 @@
         fill: var(--main-color);
         background: #2196f3;
     }
-    &--active {
-        &:hover {
+    &:hover {
             background: #2196f3;
             background-color: #2196f3;
-        }
-    }
-   
+        }   
 }
 
 .social__icons {
