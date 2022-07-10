@@ -1,4 +1,7 @@
 .link {
+    text-decoration: none;
+    list-style: none;
+    fill: currentColor;
     &:hover {
         color: #2196f3;
     }
