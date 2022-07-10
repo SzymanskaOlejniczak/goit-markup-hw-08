@@ -1,10 +1,12 @@
 .navigation {
     display: flex;
-    justify-content: center;
     list-style: none;
     align-items:center;
     margin-top: 0px;
     margin-bottom: 0px;
+    &__link {
+        color: #212121;
+    }
     &,
     .navigation__item :focus {
     color: #2196f3;
@@ -27,9 +29,5 @@
         top: 29px;
         margin-top: -4px;
     }
+    
 }
-
-
-
-
-
