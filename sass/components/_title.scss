@@ -1,4 +1,4 @@
-.title1 {
+.heading__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1, 36;
@@ -7,14 +7,16 @@
     padding-bottom: 40px;
     color: var(--main-color);
 }
-.title2 {
+.section__title {
+  
     font-weight: 700;
     font-size: 36px;
     line-height: 1, 17;
     text-align: center;
   
 }
-.title3 {
+
+.lorem-ipsum__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1, 14;
