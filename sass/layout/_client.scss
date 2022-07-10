@@ -10,7 +10,7 @@
     .client__item {
         fill:#AFB1B8;
         cursor: pointer;
-        &--active {
+        &--gray {
             width: 170px;
             height: 92px;
             border: 1px solid #AFB1B8;
@@ -23,5 +23,4 @@
                 border: 1px solid #2196f3;
             }
         }
-    } 
-    
+    }
