@@ -1,0 +1,22 @@
+.mobile-menu {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.172em;
+    letter-spacing: 0.02em;
+    color: rgba(33, 33, 33, 1);
+    list-style: none;
+  
+    &__item {
+      &--bottom {
+        padding-bottom: 32px;
+      }
+    }
+  
+    &__link {
+        text-decoration: none;
+        color: #212121;
+      &--active-page {
+        color: #2196f3;
+      }
+    }
+  }
