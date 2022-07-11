@@ -1,12 +1,18 @@
 .link {
-    text-decoration: none;
-    list-style: none;
-    fill: currentColor;
     &:hover {
         color: #2196f3;
     }
 }
 
+
 :root {
+    --brand-main-color: #2196f3;
     --main-color:#fff;
-}
+    --brand-third-color: #2f303a;
+    --background-first-color: #f5f4fa;
+    --text-main-color: #212121;
+    --text-link-color: #757575;
+    --vector-team-color: #afb1b8;
+    --main-font: 'Roboto', 'Raleway', sans-serif;
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
