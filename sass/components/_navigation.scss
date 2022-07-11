@@ -1,33 +1,141 @@
 .navigation {
     display: flex;
+    flex-direction: column;
     list-style: none;
-    align-items:center;
-    margin-top: 0px;
-    margin-bottom: 0px;
+  
+    &__item {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      color: var(--text-main-color);
+  
+      &--right {
+        margin-right: 46px;
+      }
+  
+      &--hidden {
+        display: none;
+        visibility: hidden;
+      }
+    }
+  
     &__link {
-        color: #212121;
-    }
-    &,
-    .navigation__item :focus {
-    color: #2196f3;
-    }
-    &,
-    .navigation__item :hover {
-    color: #2196f3;
-    }
-}
-.navigation__item {
-    margin-left: 23px;
-    align-items: center;
-    justify-content: space-between;
-    &--active::after {
-        content: "";
-        display: block;
-        position: relative;
-        border-top: 4px solid #2196f3;
+      position: relative;
+      transition: var(--transition);
+      transition-property: color;
+      text-decoration: none;
+  
+      &--active,
+      &:active,
+      &:focus,
+      &:hover {
+        color: var(--brand-main-color);
+      }
+  
+      &--active::after {
+        content: '';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        border-top: 4px solid var(--brand-main-color);
         border-radius: 2px;
-        top: 29px;
-        margin-top: -4px;
+        width: 100%;
+        top: 46px;
+        left: 0;
+        display: block;
+        position: absolute;
+      }
     }
-    
-}
+  
+    &__hamburger-button {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      width: 40px;
+      height: 40px;
+    }
+  
+    &__hamburger-menu {
+      fill: rgba(33, 33, 33, 1);
+      cursor: pointer;
+      transition: var(--transition);
+      transition-property: fill;
+  
+      &:active,
+      &:focus,
+      &:hover {
+        fill: var(--brand-main-color);
+      }
+    }
+  }
+  .button {
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    line-height: 1.875em;
+    letter-spacing: 0.06em;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .menu-toggle {
+      display: none;
+    }
+  
+    .navigation {
+      flex-direction: row;
+  
+      &--left {
+        margin-left: 83px;
+        list-style: none;
+      }
+  
+      &__item {
+        &--hidden {
+          display: block;
+          visibility: visible;
+        }
+  
+        &--right {
+          margin-right: 60px;
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .menu-toggle {
+      display: none;
+    }
+  
+    .navigation {
+      flex-direction: row;
+        margin-top: 0px;
+     margin-bottom: 0px;
+  
+      &--left {
+        margin-left: 90px;
+      }
+  
+      &__item {
+        &--hidden {
+          display: block;
+          visibility: visible;
+        }
+  
+        &--right {
+          margin-right: 46px;
+        }
+      }
+    }
+  }
