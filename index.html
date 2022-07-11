@@ -13,28 +13,42 @@
     </head>
     <body>
         <header class="header">
-            <div class="container container__header">
-            <a class="logo link" href="WebStudio"><h3 class="logo__text"><span class="logo__text--blue">Web</span><span class="logo__text--black">Studio</span></h3></a>
+            <div class="container header__container">
+            <a class="logo" href="WebStudio"><h3 class="logo__text"><span class="logo__text--blue">Web</span><span class="logo__text--black">Studio</span></h3></a>
             <nav>
-            <ul class="navigation">
-                <li class="navigation__item navigation__item--active"><a href="index.html" class="navigation__link link">Agencja</a></li>
-                <li class="navigation__item"><a href="portfolio.html" class="navigation__link link">Portfolio</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link link">Kontakt</a></li>
+            <ul class="navigation navigation--left">
+                <li class="navigation__item navigation__item--right navigation__item--hidden">
+                    <a href="index.html" class="navigation__link navigation__link--active">Agencja</a></li>
+                <li class="navigation__item navigation__item--right navigation__item--hidden">
+                    <a href="portfolio.html" class="navigation__link">Portfolio</a></li>
+                <li class="navigation__item navigation__item--hidden">
+                    <a href="" class="navigation__link">Kontakt</a></li>
+                <li class="navigation__item">
+                    <button 
+                     class="menu-toggle js-open-menu navigation__hamburger-button button"
+                     aria-expanded="false"
+                     aria-controls="mobile-menu"
+                     >
+                     <svg class="navigation__hamburger-menu" width="40" height="40">
+                       <use href="./images/menu.svg#menu"></use> 
+                     </svg>
+                    </button>  
+                  </li>
             </ul>
             </nav> 
-            <ul class="contact-info">
-                <li class="contact-info__text">
-                    <a class="contact-info__text--gray link" href="mailto:info@devstudio.com">
-                    <svg width="16" height="12">
+            <ul class="contact contact--left">
+                <li class="contact__item contact__item--right">
+                    <a class="contact__link" href="mailto:info@devstudio.com">
+                    <svg class="contact__icon" width="16" height="12">
                         <use
                         href="images/icons.svg#envelope">
                         </use>
                     </svg>
                     info@devstudio.com</a>
                 </li>
-                <li class="contact-info__text">
-                    <a class="contact-info__text--gray link" href="phone:+48111111111">
-                        <svg width="16" height="12">
+                <li class="contact__item contact__item--top">
+                    <a class="contact__link" href="phone:+48111111111">
+                        <svg class="contact__icon" width="16" height="12">
                             <use
                             href="images/icons.svg#mobile">
                             </use>
@@ -42,18 +56,14 @@
                     (+48)111 111 111</a>
                 </li>
             </ul>
-            <div class="mobile-navigation">
-                <button class="mobile-navigation__button js-open-menu">
-                <svg class="mobile-navigation__icon">
-                  <use href="./images/icons.svg#icon-menu"></use>
-                </svg></button>
-            </div>
             </div>
         </header>
         <main>
-        <section class="heading">
-            <div class="container"><h1 class="heading__title">EFEKTYWNE ROZWIĄZANIA <br>DLA WASZEGO BIZNESU</h1> 
-            <button class="heading__button" type="button"data-modal-open>Zamów usługe</button> 
+            <!--===Hero==-->
+        <section class="heading section--heading">
+            <div class="container heading__container">
+                <h1 class="heading__title heading__title--bottom">EFEKTYWNE ROZWIĄZANIA <br>DLA WASZEGO BIZNESU</h1> 
+            <button class="heading__button button" type="button"data-modal-open>Zamów usługe</button> 
             </div>
         </section>
         <section>
@@ -70,7 +80,7 @@ non sodales dui. Interdum et malesuada</p>
                     </div>
                     <div>
                        <svg class="lorem-ipsum__icon"> 
-                            <use href="images/icons.svg#clock"></use>
+                            <use href="./images/icons.svg#clock"></use>
                          </svg>
                          <h3 class="Lorem-ipsum__title">LOREM IPSUM</h3>
                     <p class="lorem-ipsum__text">
@@ -326,7 +336,7 @@ non sodales dui. Interdum et malesuada</p>
         <footer class="footer">  
                <div class="container__footer container">
                 <div>
-                <a class="link" href="WebStudio"><h3 class="footer-logo__text"><span class="logo__text--blue">Web</span><span class="logo__text--white link">Studio</span></h3></a>
+                <a class="logo" href="WebStudio"><h3 class="footer-logo__text"><span class="logo__text--blue">Web</span><span class="logo__text--white link">Studio</span></h3></a>
                 <address class="footer-adress__text--color">
                      m. Warszawa, Aleje Jerozolimskie 21
                 </address>
@@ -379,6 +389,50 @@ non sodales dui. Interdum et malesuada</p>
                  </div>
                </div>     
         </footer>
+       <!----  ======= M O B I L E  M E N U  ======= -->
+
+     <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="js-close-menu menu-container__close-btn button">
+         <svg class=" " width="40" height="40">
+            <use href="images/icons.svg#close-black"></use>
+            </svg>
+         </button>
+         <ul class="mobile-menu">
+          <li class="mobile-menu__item  mobile-menu__item--bottom">
+            <a href="./index.html" class="mobile-menu__link mobile-menu__link--active-page">Agencja</a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item--bottom">
+             <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
+          </li>
+          <li class="mobile-menu__item">
+             <a href="" class="mobile-menu__link">Kontakt</a>
+          </li>
+         </ul>
+         <ul class="mobile-contact mobile-contact--top">
+          <li class="mobile-contact__item mobile-contact__item--bottom">
+            <a href="tel:+48111111111" class="mobile-contact__phone">+48 111 111 111</a>
+          </li>
+          <li class="">
+            <a href="mailto:info@devstudio.com" class="mobile-contact__mail">info@devstudio.com</a>
+          </li>
+         </ul>
+         <ul class="mobile-social mobile-social--top">
+          <li class="mobile-social__item">
+            <a href= "" class="mobile-social__link">Instagram<span class="mobile-social--space">|<span></a>
+          </li>
+          <li class="mobile-social__item">
+            <a href=" " class="mobile-social__link">Twitter<span class="mobile-social--space">|<span></a>
+          </li>
+          <li class="mobile-social__item">
+            <a href=" " class="mobile-social__link">Facebook<span class="mobile-social--space">|<span></a>
+          </li>
+          <li class="mobile-social__item">
+            <a href=" " class="mobile-social__link">Linkedin</a>
+          </li>
+         </ul>
+         </div>
+  
+      
         <div class="backdrop is-hidden"data-modal>
             <div class="modal">
                 <button class="modal__btn" type="button"data-modal-close="">
@@ -427,6 +481,7 @@ non sodales dui. Interdum et malesuada</p>
             </form>
         </div>
         <script src="./js/modal.js"></script>
-        <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+       <script defer src="js/mobile-menu.js"></script>
+       <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
     </body>
 </html>
