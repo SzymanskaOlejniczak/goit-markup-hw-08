@@ -1,17 +1,23 @@
 .modal-form__submit {
-    margin-left: 164px;
-    margin-right: 164px;
-    width: 200px;
-    height: 50px;
-    margin-top: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #2196F3;
-    border: none;
-    border-radius: 4px;
-    font-family: 'Roboto';
+    color: #FFFFFF;
+    height: 50px;
+    width: 200px;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-     line-height: 30px;
-     letter-spacing: 0.06em;
-    color: var(--main-color);
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: opacity;
+    position: relative;
+    align-self: center;
 }
