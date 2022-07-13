@@ -2,14 +2,14 @@
 
 .modal {
     position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1.25);
-  background-color: #fff;
-  width: 528px;
-  height: 581px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
     &__btn {
         position: absolute;
         background-color: #fff;
@@ -44,69 +44,62 @@
     position: relative;
     display: flex;
     flex-direction: column;
-
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 10px;
     &__text {
+        font-family: 'Roboto';
+        font-style: normal;
         font-weight: 700;
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.5;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--text-black);
         margin-top: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 12px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
       
     &__icon {
       
-        fill: #000;
         position: absolute;
         left: 52px;
-            &--person {
-            width: 15px;
-            height: 15px;
-            top: 125px;
-            }
-            &--phone {
-            left: 52px;
-            width: 15px;
-            height: 15px;
-            top: 195px;
-            }
-            &--email {
-            left: 52px;
-            width: 16px;
-            height: 12px;
-            top: 265px;
-            }
+        bottom: 11px;
+        width: 18px;
+        height: 18px;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: fill;
+            
     }
     &__input {
-        color: grey;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        display: block;
-
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-        width: 448px;
-        height: 40px;
         padding-left: 42px;
-    }
-    &__textarea {
-        resize: none;
+        width: 370px;
+        height: 40px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
-        color: grey;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        display: block;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: border;
+
+        &:focus-within {
+            border-color: var(--webstudio-color);
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-property: border;
+        }   
+    }    
+    &__textarea {
+        padding: 12px 16px;
+        width: 370px;
         height: 120px;
-        width: 448px;
-        padding: 12px 16px; 
+        border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
+        margin-bottom: 10px;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: border;
             &:focus-within {
                 border-color: #2196f3;
             }
@@ -119,9 +112,28 @@
             padding-left: 40px;
             margin-bottom: 4px;
             margin-top: 10px;
+            &--text {
+                font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.01em;
+            color: grey;
+            margin-bottom: 4px;
+            }
     }
-    
+    &__button {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: 30px;
+        }
 }
+    
+
 .modal-form::placeholder {
     color: rgba(117, 117, 117, 0.5);
     font-size: 12px;
@@ -169,5 +181,9 @@ input:focus-within {
 .label-link__color {
     color:#2196f3,
 }
+@media screen and (max-width: 768px) {
+    .modal {
+        width: 100%;
+    }
 
-
+}
