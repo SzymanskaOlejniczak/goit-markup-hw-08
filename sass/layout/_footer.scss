@@ -1,6 +1,9 @@
 .footer {
     background: #2f303a;
     height: 252px;
+    &__logo {
+        text-decoration: none;
+    }
 }
 
 .footer-adress {
@@ -70,7 +73,7 @@
     margin-top: 4px;
     }
     &__input {
-    width: 358px;
+    max-width: 358px;
         height: 50px;
         left: 815px;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -84,5 +87,4 @@
     }
     
 }
-
 
