@@ -1,82 +1,52 @@
-
-
-// Mobile styles
 .lorem-ipsum {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    padding-top: 60px;
+    max-width: 100%;
+    gap:30px;
+    padding-top: 94px;
+ 
     &__icon {
-        padding-top: 25px;
-        padding-left: 25px;
-        width: 450px;
+        padding-top: 20px;
+        padding-left: 20px;
+        max-width: 450px;
         height: 120px;
         background-color: #F5F4FA;
         border-radius: 4px;
+      
     }
     
     &__text {
         font-size: 14px;
-        width: 260px;
+        max-width: 450px;
         line-height: 1, 71;
         letter-spacing: 0, 03em;
         color: #757575;
         padding-bottom: 0px;
+      
     }
-} 
-// Tablet styles
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .lorem-ipsum {
-        flex-direction: column;
-        flex-basis: #{calc((100%/2) - 30px)};
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 94px;
-        &__icon {
-            padding-top: 20px;
-            padding-left: 20px;
-            width: 270px;
-            height: 120px;
-            background-color: #F5F4FA;
-            border-radius: 4px;
-        }
-        
-        &__text {
-            font-size: 14px;
-            width: 260px;
-            line-height: 1, 71;
-            letter-spacing: 0, 03em;
-            color: #757575;
-            padding-bottom: 0px;
-        }
-    }   
-}
-// Desktop styles
-
+}   
 @media screen and (min-width: 1200px) {
     .lorem-ipsum {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 94px;
         &__icon {
-            padding-top: 20px;
-            padding-left: 20px;
-            width: 270px;
-            height: 120px;
-            background-color: #F5F4FA;
-            border-radius: 4px;
+            width:270px;
+           
         }
-        
         &__text {
-            font-size: 14px;
-            width: 260px;
-            line-height: 1, 71;
-            letter-spacing: 0, 03em;
-            color: #757575;
-            padding-bottom: 0px;
+            width: 270px;
         }
-    }   
     }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .lorem-ipsum {
+        &__icon {
+            width:354px;
+         
+        }
+        &__text {
+            width: 354px;
+          
+        }
+    }
+}
