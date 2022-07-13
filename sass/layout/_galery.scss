@@ -6,12 +6,9 @@
     background: var(--main-color);
     border: 1px solid #EEEEEE;
     justify-content: center;
-    max-width: 450px;
-    padding: 0px;
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    margin-right: 10px;
+  
+        flex: 0 0 calc(100% - 30px);
+        max-width: calc(100% - 30px);
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
         background: var(--main-color);
@@ -23,21 +20,29 @@
 
 
 .galery-box {
-    position: relative;
-    border: 1px solid #ececec;
+    border: 1px solid #ECECEC;
     border-top: none;
+    width: 100%;
     &__title {
+        font-family: 'Roboto';
+        font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
+        letter-spacing: 0.06em;
+        padding-top: 20px;
         padding-left: 24px;
-        padding-right: 24px;
         &--gray {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
             font-size: 16px;
-            line-height: 1, 88;
-            color: #757575;
-            margin-left: 24px;
-            margin-right: 24px;
+            line-height: 1.88;
+            letter-spacing: 0.03em;
+            margin-top: 4px;
+            margin-bottom: 20px;
+            padding-left: 24px;
+            color: grey;
         }
     }
 }    
@@ -60,24 +65,29 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__overlay {
-        position:absolute;
-        top: 1px;
-        left:0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(33, 150, 243, 0.9);
-        transform: translateY(100%);
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translatey(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: top, left, width, height, background-color, transform;
         &--text {
-            font-family: 'Roboto';
-            font-size: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 1.6;
-            letter-spacing: 0.03em;
-            color: var(--main-color);
-            margin: 77px 24px 77px 24px;
+             font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        margin-top: 49px;
+        margin-right: 45px;
+        margin-bottom: 49px;
+        margin-left: 24px;
             
         }
     }
@@ -87,24 +97,12 @@
     .galery__item {
         width: calc(50vw - 30px);
     }
-    .box {
-        &__overlay{
-            &--text {
-                margin: 49px 24px 49px 24px;
-            }
-        }
-    }
+    
 }
 
 @media screen and (min-width: 1200px) {
     .galery__item {
         width: 370px;
     }
-    .box {
-        &__overlay{
-            &--text {
-                margin: 49px 24px 49px 24px;
-            }
-        }
-    }
+    
 }
