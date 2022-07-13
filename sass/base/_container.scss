@@ -1,139 +1,21 @@
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
     min-width: 320px;
     max-width: 1200px;
-    min-width: 320px;
-  }
-  
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    .container {
-    }
-  }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    .container {
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    .container {
-    }
-  }
-  .section {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+    
+}
+.section {
     padding-top: 60px;
     padding-bottom: 60px;
-  
-    &--top {
-      padding-top: 0;
-    }
-  
-    &--heading {
-      padding-top: 118px;
-      padding-bottom: 118px;
-    }
-  
-    &--works {
-      padding-top: 0px;
-      padding-bottom: 0px;
-    }
-  
-    &__title {
-      text-align: center;
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 1.171em;
-      letter-spacing: 0.03em;
-  
-      &--bottom {
-        margin-bottom: 30px;
-      }
-    }
-  }
-  
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .section {
-      &--bottom {
-        padding-bottom: 45px;
-      }
-    }
-  }
-  
-  @media screen and (min-width: 1200px) {
-    .section {
-      padding-top: 94px;
-      padding-bottom: 94px;
-  
-      &--works {
-        padding-top: 0px;
-      }
-  
-      &--banner {
-        padding-top: 200px;
-        padding-bottom: 200px;
-      }
-  
-      &__title {
-        font-size: 36px;
-      }
-    }
-  }
-/*
-
-//Mobile styles
-.container {
-    max-width: 100%; 
-    align-items: center;
-    &-header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        min-height: 47px;
-        margin:0;
-        
-    }
-}
-// Tablet styles
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    // Main container
-  
-.container {
-    max-width: 100%;
-    align-items: center;    
-    &__header {
-      display: flex;
-      align-items: center;
-      max-width: 768px;
-      min-height: 80px;
-      justify-content: space-around;
-      margin: 0 auto;
-    }
-}    
-.section {
-    padding-top: 60px;
-}
 }
 
-// Desktop styles
 
 @media screen and (min-width: 1200px) {
-.section {
-    padding-bottom: 94px;
-    padding-top: 94px;
-} 
-.container {
-    width: 1200px;
-    margin: 0 auto;  
-    align-items: center;
-    &-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 80px;    
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
     }
 }
-
-}
-
-*/
-
