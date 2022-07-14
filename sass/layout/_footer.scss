@@ -74,9 +74,12 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--main-color);
+        
     }
     &__box {
         margin-top: 20px;
+        
+        
     }
     &__btn {
         display: flex;
@@ -84,14 +87,16 @@
         align-items: center;
     }
     &__icon {
-        position: absolute;
+    position: absolute;
     width: 24px;
     height: 24px;
     margin-left: 64px;
     margin-top: 3px;
+    
+
     }
     &__input {
-      
+      width: 100%;
         height: 50px;
         padding: 15px;
         padding-left: 16px;
@@ -130,13 +135,17 @@
             align-items: flex-start;
             
             justify-content: space-between;
+            height: 252px;
         }
     .footer-contact {
-            width: 247px;
+            width: 270px;
         }
-    .footer__logo {
-                text-align: left;
+    .footer-logo {
+         &__text  {   
+        text-align: left;
+               
             }
+        }
     .footer-address {
                 text-align: left;
             }
@@ -147,9 +156,11 @@
                 }
             }
     .newsletter {
+       
         text-align: left;
         margin-left: auto;
-        width: 570px;
+        max-width: 570px;
+        transform: translateY(-280px);
         &__text {
             margin: 0;
             padding: 0;
@@ -159,6 +170,14 @@
             display: inline-flex;
             justify-content: center;
             align-content: center;
+        }
+        &__icon {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            margin-left: 64px;
+            margin-top: 3px;
+            right: 20px;
         }
         &__input {
             width: 358px;
@@ -172,7 +191,7 @@
   
 
         .container__footer {
-            
+          
             align-items: flex-start;
             flex-direction: row;
             flex-wrap: wrap;
@@ -182,8 +201,27 @@
     width: calc(50vw - 30px);
    }
    .newsletter {
-    width: calc(100vw - 30px);
-        margin-top: 60px;
+    width: calc(50vw - 30px);
+       padding-bottom: 60px;
+        &__box {
+            flex-direction: column;
+            transform: translateX(50%);
+           
+        }
+        &__input {
+            width: 100%;
+        }
+        &__text {
+            transform: translateX(50%);
+        }
+        &__icon {
+           
+            width: 24px;
+            height: 24px;
+            margin-left: 110px;
+            margin-top: 3px;
+            
+        }
    }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
