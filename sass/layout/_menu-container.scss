@@ -15,24 +15,25 @@
     }
   
     &__close-btn {
-      position: absolute;
-        background: none;
-      color: #212121;
-      border: none;
-      padding: 0;
-      font: inherit;
-      cursor: pointer;
-      outline: inherit;
-     margin-left: auto;
-      width: 40px;
-      height: 40px;
-      top: 16px;
-      right: 16px;
-  
-      &:active,
-      &:focus,
-      &:hover {
-        fill: var(--brand-main-color);
+      margin-left: auto;
+    margin-right: 0;
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+      &--icon {
+        fill: #000;
+        &:active,
+        &:hover,
+        &:focus {
+            fill:  #2196f3;
+    }
       }
     }
   }
