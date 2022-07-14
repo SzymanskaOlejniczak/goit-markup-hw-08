@@ -149,6 +149,7 @@ non sodales dui. Interdum et malesuada</p>
             <ul class="team__list">
                 <li class="team__item">
                     <img alt="John Doe product designer"
+                    
                     src="images/Product Designer.jpg"
                     srcset="
                     images/Product Designer.jpg 270w,
@@ -364,66 +365,66 @@ non sodales dui. Interdum et malesuada</p>
         </main>
         <footer class="footer">  
             <div class="container__footer container">
-             <div>
+             <div class="footer-contact">
              <a class="footer__logo" href="WebStudio"><h3 class="footer-logo__text"><span class="logo__text--blue">Web</span><span class="logo__text--white link">Studio</span></h3></a>
-             <address class="footer-adress__text--color">
+             <address class="footer-address__text--color">
                   m. Warszawa, Aleje Jerozolimskie 21
              </address>
-             <ul class="footer-adress">
-                 <li><a class="footer-adress__text" href="mailto:info@example.com">info@example.com</a></li>
-                 <li><a href="phone:+48111111111" class="footer-adress__text">(+48)111 111 111</a></li>
+             <ul class="footer-address">
+                 <li class="footer-address__item"><a class="footer-address__text" href="mailto:info@example.com">info@example.com</a></li>
+                 <li class="footer-address__item"><a href="phone:+48111111111" class="footer-address__text">(+48)111 111 111</a></li>
              </ul>    
              </div>
              <div class="footer-social">
-                     <h3 class="footer-social__text link">DOŁĄCZ DO NAS</h3>
+                     <h3 class="footer-social__text">DOŁĄCZ DO NAS</h3>
                  <ul class="footer-social__list"> 
-                     <li><a class="footer-social__item" href="#">
-                     <svg class="footer-social__icons">
+                     <li class="footer-social__item"><a class="footer-social__item" href="#">
+                     <svg class="footer-social__icons" width="44" height="44">
                          <use href="images/icons.svg#instagram"></use>
                      </svg>
                      </a>
                      </li>
-                     <li><a class="footer-social__item" href="#">
-                     <svg class="footer-social__icons">
+                     <li class="footer-social__item" ><a class="footer-social__item" href="#">
+                     <svg class="footer-social__icons" width="44" height="44">
                          <use href="images/icons.svg#twitter"></use>
                      </svg>
                      </a>
                      </li>
-                     <li><a class="footer-social__item" href="#">
-                     <svg class="footer-social__icons">
+                     <li class="footer-social__item"><a class="footer-social__item" href="#">
+                     <svg class="footer-social__icons" width="44" height="44">
                          <use href="images/icons.svg#facebook"></use>
                      </svg>
                      </a>
                      </li>
-                     <li><a class="footer-social__item" href="#">
-                     <svg class="footer-social__icons">
+                     <li class="footer-social__item"><a class="footer-social__item" href="#">
+                     <svg class="footer-social__icons" width="44" height="44">
                          <use href="images/icons.svg#linkedin"></use>
                      </svg>
                      </a>
                      </li>
                  </ul>
                  </div>
-             <div class="newsletter">
+             <form class="newsletter">
                 <label for="useremail"><h3 class="newsletter__text">
                      ZAPISZ SIĘ DO NEWSLETTERA</h3></label>
-                <div>
+                <div class="newsletter__box">
                      <input class="newsletter__input" type="email" id="useremail" name="useremail" placeholder="E-mail" required=""/>
-                     <button class="newsletter__btn" type="submit">
-                     Zapisz się
+                     <button class="button__footer" type="submit">
+                        <span class="button__label newsletter__btn">Zapisz się
                      <svg class="newsletter__icon">
                      <use href="images/icon send.svg#icon send"></use>
-                     </svg>
+                     </svg></span>
                      </button>
                  </div>
-              </div>
+             </form>
             </div>     
       
         </footer>
        <!----  ======= M O B I L E  M E N U  ======= -->
 
      <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="js-close-menu menu-container__close-btn button">
-         <svg class=" " width="40" height="40">
+        <button class="js-close-menu menu-container__close-btn">
+         <svg class="menu-container__close-btn--icon " width="40" height="40">
             <use href="images/icons.svg#close-black"></use>
             </svg>
          </button>
@@ -462,7 +463,7 @@ non sodales dui. Interdum et malesuada</p>
          </ul>
          </div>
   
-      
+      <!----MODAL---->
         <div class="backdrop is-hidden"data-modal>
             <div class="modal">
                 <button class="modal__btn" type="button"data-modal-close="">
@@ -470,15 +471,15 @@ non sodales dui. Interdum et malesuada</p>
                     <use href="images/icons.svg#close-black"></use>
                 </svg>
                 </button>
+                <h3 class="modal-form__text" id="contact-details-head">
+                    Zostaw swoje dane w formularzu poniżej
+                </h3>
             <form  class="modal-form">
-                    <h3 class="modal-form__text" id="contact-details-head">
-                        Zostaw swoje dane w formularzu poniżej
-                    </h3>
                     <label for="username" class="modal-form__label">
                        <p class="modal-form__label--text"> Imie</p>
                          
                         <input class="modal-form__input" type="text" id="username" name="contact-details.username" required=""/>
-                        <svg class="modal-form__icon">
+                        <svg class="modal-form__icon" style="top: 29px">
                             <use href="images/person-black.svg#person"></use>
                         </svg>  
                     </label>
@@ -486,7 +487,7 @@ non sodales dui. Interdum et malesuada</p>
                         <p class="modal-form__label--text"> Telefon</p>
                         
                         <input class="modal-form__input" type="tel" id= "userphone" name="contact-details.phone_number" required=""/>
-                        <svg class="modal-form__icon">
+                        <svg class="modal-form__icon" style="top: 98px">
                             <use href="images/phone.svg#phone"></use>
                         </svg>
                     </label>
@@ -494,7 +495,7 @@ non sodales dui. Interdum et malesuada</p>
                         <p class="modal-form__label--text"> Email</p>
                         
                     <input class="modal-form__input" type="email" id="email" name="contact-details.email" required=""/>
-                    <svg class="modal-form__icon modal-form__icon--email">
+                    <svg class="modal-form__icon" style="top: 165px">
                         <use href="images/email.svg#Email"></use>
                     </svg>
                 </label>  
