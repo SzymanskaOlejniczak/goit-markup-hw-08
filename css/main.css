@@ -717,6 +717,7 @@ input:focus-within {
     margin-top: 14px;
     margin-left: 70px;
     display: block;
+    justify-content: center;
   }
   .footer-social__text {
     text-align: center;
@@ -1434,10 +1435,6 @@ input:focus-within {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.footer-contact {
-  width: calc(100vw - 30px);
 }
 
 .footer-address {
