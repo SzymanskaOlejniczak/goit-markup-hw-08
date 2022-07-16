@@ -1517,11 +1517,7 @@ input:focus-within {
   align-items: center;
 }
 .newsletter__icon {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  margin-left: 64px;
-  margin-top: 3px;
+  margin-left: 24px;
 }
 .newsletter__input {
   width: 70%;
@@ -1550,6 +1546,16 @@ input:focus-within {
   font-size: 16px;
   line-height: 30px;
   outline: none;
+}
+
+.button__label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--brand-second-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -1582,22 +1588,19 @@ input:focus-within {
   }
 
   .newsletter {
-    transform: translate(-70px, -300px);
+    text-align: left;
+    margin-left: auto;
+    width: 570px;
   }
   .newsletter__text {
-    margin-left: 40px;
+    margin: 0;
     padding: 0;
+    text-align: left;
   }
   .newsletter__box {
     display: inline-flex;
     justify-content: center;
     align-content: center;
-  }
-  .newsletter__icon {
-    width: 24px;
-    height: 24px;
-    margin-left: 110px;
-    margin-top: 3px;
   }
   .newsletter__input {
     width: 358px;
