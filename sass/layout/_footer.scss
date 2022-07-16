@@ -12,7 +12,9 @@
         justify-content: center;
         align-items: center;
 }
-
+.footer-contact {
+    width: calc(100vw - 30px);
+}
 .footer-address {
     font-weight: 400;
     font-size: 14px;
@@ -141,12 +143,38 @@
             margin-right: 12px;
         }
     }
+    .footer-address {
+        &__item {
+            text-align: start;
+        }
+        &__text {
+            text-align: start;
+            &--color {
+                text-align: start;
+            }
+        }
+    }
+        
     .container__footer {
 
             align-items: flex-start;
             flex-direction: row;
             justify-content: space-between;
         }
+        .footer-logo__text {
+           text-align: start;
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1, 19;
+            letter-spacing: 0, 03em;
+            text-decoration: none;
+            margin-top: 60px;
+            margin-bottom: 0px;
+            padding-bottom: 20px;
+            list-style: none;
+        }
+       
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     // tablet
