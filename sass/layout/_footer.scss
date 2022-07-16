@@ -87,11 +87,7 @@
         align-items: center;
     }
     &__icon {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    margin-left: 64px;
-    margin-top: 3px;
+   margin-left: 24px;
     
 
     }
@@ -125,6 +121,15 @@
         line-height: 30px;
         outline: none;
 }
+.button__label {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--brand-second-color);
+  }
 
 @media screen and (min-width: 1200px) {
     //desktop
@@ -132,10 +137,10 @@
 
     .container__footer {
             
-            align-items: flex-start;
-            
-            justify-content: space-between;
-            height: 252px;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
         }
     .footer-contact {
             width: 270px;
@@ -161,25 +166,20 @@
       width: calc(50vw - 30px);
     }
     .newsletter {
-        transform: translate(-70px, -300px);
+        text-align: left;
+        margin-left: auto;
+        width: 570px;
        
         &__text {
-            margin-left: 40px;
+            margin: 0;
             padding: 0;
+            text-align: left;
            
         }
         &__box {
             display: inline-flex;
             justify-content: center;
             align-content: center;
-        }
-        &__icon {
-            
-            width: 24px;
-            height: 24px;
-            margin-left: 110px;
-            margin-top: 3px;
-           
         }
         &__input {
             width: 358px;
