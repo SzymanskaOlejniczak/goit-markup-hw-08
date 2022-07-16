@@ -3,15 +3,15 @@
     <head>
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <title>Portfolio</title> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <style type="text/css"></style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
     <body>
         <header class="header">
-            <div class="container header__container">
+        <div class="container header__container">
             <a class="logo" href="WebStudio"><h3 class="logo__text"><span class="logo__text--blue">Web</span><span class="logo__text--black">Studio</span></h3></a>
             <nav>
             <ul class="navigation navigation--left">
@@ -23,7 +23,7 @@
                     <a href="" class="navigation__link">Kontakt</a></li>
                 <li class="navigation__item">
                     <button 
-                     class="menu-toggle js-open-menu navigation__hamburger-button button"
+                     class="menu-toggle js-open-menu navigation__hamburger-button"
                      aria-expanded="false"
                      aria-controls="mobile-menu"
                      >
@@ -54,10 +54,10 @@
                     (+48)111 111 111</a>
                 </li>
             </ul>
-            </div>
+        </div>
         </header>
-        <main>
-            <div class="container">
+        <main class="container">
+        <div class="container">
             <ul class="galery__buttons">
                 <li><button class="galery__button" type="button">Wszystkie</button></li>
                 <li><button class="galery__button" type="button">Strony</button></li> 
@@ -66,13 +66,14 @@
                 <li><button class="galery__button" type="button">Marketing</button></li> 
             </ul>
             </div>
-        <section class="section portfolio-section">
-            <div class="container">
-        <ul class="galery__list">
-            <li><figure class="galery__item">
-            <div class="box">
+        <section class="section portfolio-section container">
+        
+        <div class="container">
+            <ul class="galery__list">
+                <li><figure class="galery__item">
+                <div class="box">
           
-            <img class="galery__image"
+                <img class="galery__image"
               alt="Technocrack"
               src="images/mobile/project1mobile/img.png"
               srcset="
@@ -87,20 +88,20 @@
                 (min-width:1200px) 370px,
                 (min-width:768px) width: calc(50vw - 30px),
                 (min-width: 320px) calc(100vw - 30px)"
-          />
+            />
            
-            <div class="box__overlay">
-                <p class="box__overlay--text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
-            </div>
-            </div>
+                    <div class="box__overlay">
+                        <p class="box__overlay--text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
+                    </div>
+                </div>
             <div class="galery-box">
-        <figcaption>
+            <figcaption>
                 <h3 class="galery-box__title">Technocrack</h3>
                 <p class="galery-box__title--gray">Strona internetowa</p>
-        </figcaption>
-        </div>
-        </figure></li>
-        <li><figure class="galery__item">
+            </figcaption>
+            </div>
+                </figure></li>
+                <li><figure class="galery__item">
             <div class="box">
                 <img class="galery__image"
                 alt="Grafika New Orlean vs Golden Star"
@@ -116,18 +117,18 @@
                 (min-width:768px) width: calc(50vw - 30px),
                 (min-width: 320px) calc(100vw - 30px)"
               />
-            <div class="box__overlay">
+                <div class="box__overlay">
                 <p class="box__overlay--text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
-            </div>
+                </div>
             </div>
             <div class="galery-box">
-        <figcaption>
+                <figcaption>
                 <h3 class="galery-box__title">Grafika New Orlean vs Golden Star</h3>
                 <p class="galery-box__title--gray">Dizajn</p>
-        </figcaption>
-        </div>
-        </figure></li>
-        <li><figure class="galery__item">
+                </figcaption>
+            </div>
+            </figure></li>
+                <li><figure class="galery__item">
             <div class="box">
                 <img class="galery__image"
                 alt="Restauracja Seafood"
@@ -308,22 +309,23 @@
               />
                 <div class="box__overlay">
                 <p class="box__overlay--text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
-            </div>
+                </div>
             </div>
             <div class="galery-box">
-        <figcaption>
+            <figcaption>
                 <h3 class="galery-box__title">Growing Business</h3>
                 <p class="galery-box__title--gray">Aplikacja</p>
-        </figcaption>
-        </div>
-        </figure></li> 
+            </figcaption>
+            </div>
+            </figure>
+        </li> 
         </ul>
         </div>   
         </section>
     </main>
-    <footer class="footer">  
+    <footer class="footer container">  
         <div class="container__footer container">
-            <div class="footer-contact">
+            <div class="footer-contact container">
             <a class="footer__logo" href="WebStudio"><h3 class="footer-logo__text"><span class="logo__text--blue">Web</span><span class="logo__text--white link">Studio</span></h3></a>
                 <address class="footer-address__text--color">
                 m. Warszawa, Aleje Jerozolimskie 21
@@ -333,7 +335,7 @@
                 <li class="footer-address__item"><a href="phone:+48111111111" class="footer-address__text">(+48)111 111 111</a></li>
             </ul>    
             </div>
-            <div class="footer-social">
+            <div class="footer-social container">
                  <h3 class="footer-social__text">DOŁĄCZ DO NAS</h3>
                 <div class="mobile">
                  <ul class="footer-social__list"> 
@@ -365,7 +367,7 @@
                 </div>
              </div>
        
-            <form class="newsletter-form">
+            <form class="newsletter-form container">
                 <label class="newsletter-form__tittle" for="newsletter">Zapisz się do newslettera</label>
                 <div class="newsletter-form__box">
                     <input class="newsletter-form__input" name="email" type="email" id="newsletter" placeholder="E-mail"
