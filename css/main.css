@@ -587,7 +587,7 @@ input:focus-within {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin: 90px 0px 50px 0px;
+    margin: 0px 0px 0px 0px;
   }
 
   .galery__button {
@@ -1492,12 +1492,12 @@ input:focus-within {
   list-style: none;
 }
 
-.newsletter {
+.newsletter-form {
   text-align: center;
   margin-top: 14px;
   width: calc(100vw - 30px);
 }
-.newsletter__text {
+.newsletter-form__tittle {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -1506,48 +1506,41 @@ input:focus-within {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: var(--main-color);
+  text-transform: uppercase;
+  color: var(--brand-second-color);
 }
-.newsletter__box {
+.newsletter-form__box {
   margin-top: 20px;
 }
-.newsletter__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.newsletter__icon {
-  margin-left: 24px;
-}
-.newsletter__input {
-  width: 70%;
+.newsletter-form__input {
+  width: 100%;
   height: 50px;
   padding: 15px;
   padding-left: 16px;
   margin-bottom: 20px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #2196f3;
+  color: var(--brand-second-color);
   border-radius: 4px;
 }
+.newsletter-form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter-form__icon {
+  margin-left: 24px;
+}
 
-.button__footer {
+.button {
   width: 200px;
   height: 50px;
-  background: #2196F3;
+  background: var(--brand-main-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: none;
-  color: var(--main-color);
-  padding-left: 0px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  outline: none;
+  border: 0px;
+  cursor: pointer;
 }
-
 .button__label {
   font-family: "Roboto";
   font-style: normal;
@@ -1559,85 +1552,30 @@ input:focus-within {
 }
 
 @media screen and (min-width: 1200px) {
-  .container__footer {
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 252px;
-  }
-
-  .footer-contact {
-    width: 270px;
-  }
-
-  .footer-logo__text {
-    text-align: left;
-  }
-
-  .footer-address {
-    text-align: left;
-  }
-
-  .footer-address__item {
-    text-align: left;
-  }
-
-  .newsletter__box {
-    display: flex;
-    justify-content: end;
-    width: calc(50vw - 30px);
-  }
-
-  .newsletter {
+  .newsletter-form {
     text-align: left;
     margin-left: auto;
     width: 570px;
   }
-  .newsletter__text {
+  .newsletter-form__tittle {
     margin: 0;
     padding: 0;
     text-align: left;
   }
-  .newsletter__box {
+  .newsletter-form__box {
     display: inline-flex;
     justify-content: center;
     align-content: center;
   }
-  .newsletter__input {
+  .newsletter-form__input {
     width: 358px;
     height: 50px;
     margin-right: 12px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container__footer {
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .footer-contact {
-    width: calc(50vw - 30px);
-  }
-
-  .newsletter {
-    width: calc(50vw - 30px);
-    padding-bottom: 60px;
-  }
-  .newsletter__box {
-    flex-direction: column;
-    transform: translateX(50%);
-  }
-  .newsletter__input {
-    width: 70%;
-  }
-  .newsletter__text {
-    transform: translateX(50%);
-  }
-  .newsletter__icon {
-    width: 24px;
-    height: 24px;
-    margin-left: 110px;
-    margin-top: 3px;
+  .newsletter-form {
+    width: calc(100vw - 30px);
+    margin-top: 60px;
   }
 }/*# sourceMappingURL=main.css.map */
