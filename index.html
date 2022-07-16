@@ -63,7 +63,7 @@
         <section class="heading section--heading">
             <div class="container heading__container">
                 <h1 class="heading__title heading__title--bottom">EFEKTYWNE ROZWIĄZANIA <br>DLA WASZEGO BIZNESU</h1> 
-            <button class="heading__button button" type="button"data-modal-open>Zamów usługe</button> 
+            <button class="heading__button button" type="button" data-modal-open>Zamów usługe</button> 
             </div>
         </section>
         <section class="section">
@@ -336,7 +336,7 @@ non sodales dui. Interdum et malesuada</p>
                     </svg>
                 </li>    
                 <li class="client__item"><a href="#"></a>
-                    <svg class="client__item--gray"width="106" height="60" > 
+                    <svg class="client__item--gray" width="106" height="60" > 
                         <use href="./images/icons.svg#Logo2"></use>
                     </svg>
                 </li> 
@@ -360,7 +360,8 @@ non sodales dui. Interdum et malesuada</p>
                         <use href="images/icons.svg#Logo6"></use>
                     </svg>
                 </li>  
-        </div>
+                </ul>
+            </div>
         </section>    
         </main>
         <footer class="footer">  
@@ -406,20 +407,23 @@ non sodales dui. Interdum et malesuada</p>
                     </ul>
                     </div>
                  </div>
+                </div> 
+                <h3 class="newsletter__text">
+                    ZAPISZ SIĘ DO NEWSLETTERA</h3>  
              <form class="newsletter">
-                <label for="useremail"><h3 class="newsletter__text">
-                     ZAPISZ SIĘ DO NEWSLETTERA</h3></label>
+                <label for="useremail">
                 <div class="newsletter__box">
                      <input class="newsletter__input" type="email" id="useremail" name="useremail" placeholder="E-mail" required=""/>
+                    </label>
                      <button class="button__footer" type="submit">
                         <span class="button__label newsletter__btn">Zapisz się
-                     <svg class="newsletter__icon">
+                     <svg class="newsletter__icon" width="24" height="24">
                      <use href="images/icon send.svg#icon send"></use>
                      </svg></span>
                      </button>
                  </div>
              </form>
-            </div>     
+              
         </footer>
        <!----  ======= M O B I L E  M E N U  ======= -->
 
@@ -450,13 +454,13 @@ non sodales dui. Interdum et malesuada</p>
          </ul>
          <ul class="mobile-social mobile-social--top">
           <li class="mobile-social__item">
-            <a href= "" class="mobile-social__link">Instagram<span class="mobile-social--space">|<span></a>
+            <a href= "" class="mobile-social__link">Instagram<span class="mobile-social--space">|</span></a>
           </li>
           <li class="mobile-social__item">
-            <a href=" " class="mobile-social__link">Twitter<span class="mobile-social--space">|<span></a>
+            <a href=" " class="mobile-social__link">Twitter<span class="mobile-social--space">|</span></a>
           </li>
           <li class="mobile-social__item">
-            <a href=" " class="mobile-social__link">Facebook<span class="mobile-social--space">|<span></a>
+            <a href=" " class="mobile-social__link">Facebook<span class="mobile-social--space">|</span></a>
           </li>
           <li class="mobile-social__item">
             <a href=" " class="mobile-social__link">Linkedin</a>
@@ -465,9 +469,9 @@ non sodales dui. Interdum et malesuada</p>
          </div>
   
       <!----MODAL---->
-        <div class="backdrop is-hidden"data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="modal__btn" type="button"data-modal-close="">
+                <button class="modal__btn" type="button" data-modal-close="">
                 <svg class="modal__close-btn" >
                     <use href="images/icons.svg#close-black"></use>
                 </svg>
@@ -514,6 +518,7 @@ non sodales dui. Interdum et malesuada</p>
                     <button class="modal-form__submit" type="submit">Wyślij</button>
                 </div>
             </form>
+        </div>
         </div>
         <script src="./js/modal.js"></script>
        <script defer src="js/mobile-menu.js"></script>
