@@ -101,7 +101,9 @@
         margin-left: 70px;
         display: block;
 
-        &__text {display: flex;
+        &__text {
+            text-align: center;
+            display: flex;
             justify-items: center;
             font-weight: 700;
             font-size: 14px;
