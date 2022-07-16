@@ -110,7 +110,7 @@
             text-transform:uppercase;
             color: var(--main-color);
             padding-left: 0px;
-            transform: translate(250px, -160px);
+            
            
            
         }
@@ -137,7 +137,7 @@
         align-content: center;
         list-style: none;
         gap: 10px;
-        transform: translate(250px, -160px);
+    
        
     }
     .footer-social__icons {
@@ -158,10 +158,10 @@
         margin-top: 0;
         margin-bottom: 60px;
         &__list {
-            transform:translate(500px,-150px);
+         
         }
         &__text {
-            transform:translate(350px,-150px);
+           
         }
     }
     .mobile {
