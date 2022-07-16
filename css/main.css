@@ -1507,20 +1507,18 @@ input:focus-within {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--brand-second-color);
+  color: #fff;
 }
 .newsletter-form__box {
   margin-top: 20px;
 }
 .newsletter-form__input {
-  width: 100%;
-  height: 50px;
   padding: 15px;
   padding-left: 16px;
   margin-bottom: 20px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  color: var(--brand-second-color);
+  color: #fff;
   border-radius: 4px;
 }
 .newsletter-form__button {
@@ -1548,7 +1546,7 @@ input:focus-within {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  color: var(--brand-second-color);
+  color: #fff;
 }
 
 @media screen and (min-width: 1200px) {
