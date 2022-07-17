@@ -634,7 +634,6 @@ input:focus-within {
 .social-footer {
   margin-top: 60px;
   margin-bottom: 46px;
-  width: calc(100vw - 30px);
 }
 .social-footer__title {
   margin-bottom: 20px;
@@ -703,7 +702,6 @@ input:focus-within {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .social-footer {
-    width: calc(50vw - 30px);
     margin-top: 0;
   }
   .social-footer__title {
