@@ -434,7 +434,6 @@ input:focus-within {
   .menu-toggle {
     display: none;
   }
-
   .navigation {
     flex-direction: row;
   }
@@ -454,7 +453,6 @@ input:focus-within {
   .menu-toggle {
     display: none;
   }
-
   .navigation {
     flex-direction: row;
     margin-top: 0px;
@@ -577,7 +575,6 @@ input:focus-within {
     padding-top: 94px;
     list-style: none;
   }
-
   .galery__button {
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -607,7 +604,6 @@ input:focus-within {
     list-style: none;
     margin: 0px 0px 0px 0px;
   }
-
   .galery__button {
     background-color: #F5F4FA;
     color: #212121;
@@ -697,7 +693,6 @@ input:focus-within {
   .social-footer__title {
     text-align: left;
   }
-
   .footer-social {
     text-align: left;
     width: 206px;
@@ -996,7 +991,6 @@ input:focus-within {
   .section {
     padding-bottom: 0px;
   }
-
   .lorem-ipsum__item {
     width: 270px;
     max-height: 251px;
@@ -1056,13 +1050,11 @@ input:focus-within {
     padding-left: 0px;
     margin: 0px;
   }
-
   .img__item {
     position: relative;
     overflow: hidden;
     margin-top: 50px;
   }
-
   .img__description {
     position: absolute;
     top: 224px;
@@ -1108,7 +1100,7 @@ input:focus-within {
   flex-wrap: wrap;
 }
 .team__item {
-  width: calc(100vw - 30px);
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1213,7 +1205,6 @@ input:focus-within {
   .client__list {
     flex-wrap: nowrap;
   }
-
   .client__item {
     width: 170px;
   }
@@ -1222,7 +1213,6 @@ input:focus-within {
   .client__list {
     justify-content: space-evenly;
   }
-
   .client__item {
     width: calc(33vw - 30px);
   }
@@ -1336,7 +1326,6 @@ input:focus-within {
     justify-content: space-around;
     max-width: 768px;
   }
-
   .galery__item {
     width: calc(50vw - 30px);
   }
@@ -1349,7 +1338,6 @@ input:focus-within {
     padding-top: 56px;
     flex-direction: row;
   }
-
   .galery__item {
     width: 370px;
   }
@@ -1524,7 +1512,6 @@ input:focus-within {
     flex-direction: row;
     justify-content: space-between;
   }
-
   .newsletter-form {
     text-align: right;
     max-width: 570px;
@@ -1541,7 +1528,6 @@ input:focus-within {
     width: calc(100vw - 30px);
     margin-right: 12px;
   }
-
   .contact {
     width: 247px;
   }
@@ -1562,11 +1548,9 @@ input:focus-within {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-
   .contact {
     width: calc(50vw - 30px);
   }
-
   .newsletter-form {
     width: calc(100vw - 30px);
     margin-top: 60px;
