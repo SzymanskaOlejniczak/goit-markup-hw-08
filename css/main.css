@@ -632,7 +632,6 @@ input:focus-within {
   }
 }
 .social-footer {
-  margin-top: 60px;
   margin-bottom: 46px;
 }
 .social-footer__title {
@@ -1323,9 +1322,6 @@ input:focus-within {
     margin: 0 auto;
     justify-content: space-around;
     max-width: 768px;
-  }
-  .galery__item {
-    width: calc(50vw - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
