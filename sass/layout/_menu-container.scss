@@ -9,6 +9,8 @@
     padding: 48px 40px 48px 40px;
     transform: translateX(100%);
     transition: var(--transition);
+    display:flex;
+   flex-direction: column;
   
     &.is-open {
       transform: translateX(0);
