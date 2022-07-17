@@ -522,9 +522,10 @@ input:focus-within {
   line-height: 1.222em;
   letter-spacing: 0.02em;
   list-style: none;
+  flex-wrap: wrap;
 }
 .mobile-social--top {
-  margin-top: 64px;
+  margin-top: auto;
 }
 .mobile-social__link {
   text-decoration: none;
