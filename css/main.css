@@ -525,7 +525,7 @@ input:focus-within {
   flex-wrap: wrap;
 }
 .mobile-social--top {
-  margin-top: auto;
+  padding-top: 60px;
 }
 .mobile-social__link {
   text-decoration: none;
@@ -686,11 +686,6 @@ input:focus-within {
 }
 .footer-social__icon:hover {
   fill: var(--main-color);
-}
-
-.cos {
-  display: flex;
-  justify-content: center;
 }
 
 @media screen and (min-width: 1200px) {
