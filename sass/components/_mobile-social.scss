@@ -5,9 +5,10 @@
     line-height: 1.222em;
     letter-spacing: 0.02em;
     list-style: none;
+    flex-wrap: wrap;
   
     &--top {
-      margin-top: 64px;
+      margin-top: auto;
     }
   
     &__link {
