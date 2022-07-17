@@ -493,7 +493,7 @@ input:focus-within {
   text-decoration: none;
 }
 .mobile-contact--top {
-  margin-top: 302px;
+  margin-top: auto;
 }
 
 .mobile-menu {
@@ -653,7 +653,7 @@ input:focus-within {
 }
 
 .footer-social {
-  text-align: center;
+  text-align: left;
   width: 206px;
   list-style: none;
   display: inline-flex;
@@ -685,6 +685,11 @@ input:focus-within {
 }
 .footer-social__icon:hover {
   fill: var(--main-color);
+}
+
+.cos {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1364,6 +1369,8 @@ input:focus-within {
   padding: 48px 40px 48px 40px;
   transform: translateX(100%);
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
 }
 .menu-container.is-open {
   transform: translateX(0);
@@ -1459,6 +1466,9 @@ input:focus-within {
   text-align: center;
   margin-top: 14px;
   width: calc(100vw - 30px);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
 }
 .newsletter-form__tittle {
   margin: 0;
